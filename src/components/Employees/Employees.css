@@ -1,0 +1,29 @@
+.employees {
+  flex-wrap: wrap;
+}
+
+.employee {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 220px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #ebf5ee;
+  font-size: 16px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.552);
+}
+
+.employee:hover {
+  transform: translateY(-5px);
+}
+
+.create {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.create:hover {
+  color: #78a1bb;
+}

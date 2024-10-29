@@ -1,0 +1,70 @@
+.header {
+  margin-top: 30px;
+  color: #e2e2e2;
+}
+
+#createEmployee {
+  grid-template-columns: repeat(3, 300px);
+  padding-top: 30px;
+}
+
+.form-block {
+  width: 300px;
+  height: 50px;
+}
+
+.form-label {
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.form-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.pass {
+  top: 0;
+  height: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.show-pass {
+  height: 100%;
+  background-color: #ffffff;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+}
+
+.form-input:focus + .form-label,
+.form-label.active {
+  top: -5px;
+  transform: translateY(-100%);
+  color: #ffffff;
+}
+
+.block-create {
+  grid-column: 1 / span 3;
+  height: 40px;
+}
+
+.create {
+  height: 100%;
+  width: 400px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.create:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: lightblue;
+  transform: translateY(-5px);
+}

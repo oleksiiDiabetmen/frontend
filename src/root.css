@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  background-color: #8b786d;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+/* Displays */
+
+.d-f {
+  display: flex;
+}
+
+.d-g {
+  display: grid;
+}
+
+.col {
+  flex-direction: column;
+}
+
+/* Gaps */
+
+.r-g-40 {
+  row-gap: 40px;
+}
+
+.r-g-15 {
+  row-gap: 15px;
+}
+
+.c-g-40 {
+  column-gap: 40px;
+}
+
+.c-g-15 {
+  column-gap: 15px;
+}
+
+/* Positions */
+
+.p-r {
+  position: relative;
+}
+
+.p-a {
+  position: absolute;
+}
+
+.p-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.el-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.t-center {
+  text-align: center;
+}
