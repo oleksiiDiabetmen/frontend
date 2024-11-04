@@ -4,13 +4,6 @@ import { ref } from "vue";
 const inputType = ref("password");
 const inputValue = ref();
 
-// defineProps({
-//   inpustName: String,
-//   description: String,
-//   buttons: Boolean,
-//   inputValue: String,
-// });
-
 const props = defineProps(["inpustName", "description", "buttons"]);
 </script>
 

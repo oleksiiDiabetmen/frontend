@@ -1,9 +1,14 @@
 <script setup>
-import { ref } from "vue";
+import { computed, ref } from "vue";
 import CreateEmployeeComponent from "../components/CreateEmployee/CreateEmployeeComponent.vue";
 
 const inputValue = ref();
 const textareaValue = ref();
+const roles = ref(["Художник", "Адміністратор"]);
+
+const rolesInput = computed(() => {
+  return roles.value.join(", ");
+});
 
 const inputs = [
   {
@@ -70,11 +75,19 @@ const inputs = [
       </div>
 
       <div class="form-block p-r">
+        <div class="form-input d-f">{{ rolesInput }}</div>
+        <span class="form-label p-a" :class="{ active: roles.length != 0 }"
+          >roles:</span
+        >
+      </div>
+
+      <div class="form-block p-r" v-if="asd">
         <input
           type="text"
           name="roles"
           class="form-input"
           v-model="inputValue"
+          disabled
         />
         <label
           for="roles"
@@ -97,5 +110,9 @@ textarea {
   padding-top: 8px;
   font-size: 15px;
   max-width: 300px;
+}
+
+.form-input {
+  align-items: center;
 }
 </style>
